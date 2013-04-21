@@ -44,5 +44,15 @@
         ]
       }
     }
+  ],
+  "views": [
+    {
+      "id": "Graph",
+      "type": "Graph",
+      "state": {
+        "group": "Year",
+        "series": [ "GDP_Change" ]
+      }
+    }
   ]
 }
