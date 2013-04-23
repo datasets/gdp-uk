@@ -50,6 +50,7 @@
       "id": "Graph",
       "type": "Graph",
       "state": {
+        "graphType": "columns",
         "group": "Year",
         "series": [ "GDP_Change" ]
       }
