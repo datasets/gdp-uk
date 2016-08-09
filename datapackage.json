@@ -21,23 +21,23 @@
       "schema": {
         "fields": [
           {
-            "id": "Year",
+            "name": "Year",
             "type": "date",
             "format": "yyyy"
           },
           {
-            "id": "GDP",
+            "name": "GDP",
             "type": "number",
             "description": "Gross Value Added at basic prices: chained volume measures: Seasonally adjusted. Millions of GBP in base period money. Base period=2009. ABMI variable in ONS source."
           },
           {
-            "id": "GDP_Change",
+            "name": "GDP_Change",
             "type": "number",
             "format": "percentage",
             "description": "Gross Domestic Product: Year on Year growth: CVM SA. IHYP variable in ONS source."
           },
           {
-            "id": "GDP_Index",
+            "name": "GDP_Index",
             "type": "number",
             "description": "Gross domestic product index. Base period=2009. YBEZ variable in ONS source."
           }
