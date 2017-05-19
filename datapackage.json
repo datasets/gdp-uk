@@ -1,59 +1,65 @@
 {
-  "name": "gdp-uk",
-  "title": "UK Gross Domestic Product (GDP)",
-  "sources": [{
-    "name": "Office for National Statistics - GDP Time Series",
-    "web": "http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp",
-    "homepage": "http://www.ons.gov.uk/ons/rel/gva/gross-domestic-product--preliminary-estimate/q4-2012/tsd---preliminary-estimate-of-gdp-q4-2012.html"
-  }],
   "licenses": [
     {
       "id": "odc-pddl",
       "url": "http://opendatacommons.org/licenses/pddl/"
     }
   ],
+  "name": "gdp-uk",
   "resources": [
     {
       "path": "annual.csv",
-      "sources": [{
-        "web": "http://www.ons.gov.uk/ons/datasets-and-tables/data-selector.html?cdid=ABMI&dataset=qna&table-id=C2"
-      }],
       "schema": {
         "fields": [
           {
+            "format": "any",
             "name": "Year",
-            "type": "date",
-            "format": "yyyy"
+            "type": "date"
           },
           {
+            "description": "Gross Value Added at basic prices: chained volume measures: Seasonally adjusted. Millions of GBP in base period money. Base period=2009. ABMI variable in ONS source.",
             "name": "GDP",
-            "type": "number",
-            "description": "Gross Value Added at basic prices: chained volume measures: Seasonally adjusted. Millions of GBP in base period money. Base period=2009. ABMI variable in ONS source."
+            "type": "number"
           },
           {
-            "name": "GDP_Change",
-            "type": "number",
+            "description": "Gross Domestic Product: Year on Year growth: CVM SA. IHYP variable in ONS source.",
             "format": "percentage",
-            "description": "Gross Domestic Product: Year on Year growth: CVM SA. IHYP variable in ONS source."
+            "name": "GDP_Change",
+            "type": "number"
           },
           {
+            "description": "Gross domestic product index. Base period=2009. YBEZ variable in ONS source.",
             "name": "GDP_Index",
-            "type": "number",
-            "description": "Gross domestic product index. Base period=2009. YBEZ variable in ONS source."
+            "type": "number"
           }
         ]
-      }
+      },
+      "sources": [
+        {
+          "web": "http://www.ons.gov.uk/ons/datasets-and-tables/data-selector.html?cdid=ABMI&dataset=qna&table-id=C2"
+        }
+      ]
     }
   ],
+  "sources": [
+    {
+      "homepage": "http://www.ons.gov.uk/ons/rel/gva/gross-domestic-product--preliminary-estimate/q4-2012/tsd---preliminary-estimate-of-gdp-q4-2012.html",
+      "name": "Office for National Statistics - GDP Time Series",
+      "web": "http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp"
+    }
+  ],
+  "title": "UK Gross Domestic Product (GDP)",
   "views": [
     {
       "id": "Graph",
-      "type": "Graph",
       "state": {
         "graphType": "columns",
         "group": "Year",
-        "series": [ "GDP_Change" ]
-      }
+        "series": [
+          "GDP_Change"
+        ]
+      },
+      "type": "Graph"
     }
   ]
 }
