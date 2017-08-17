@@ -51,15 +51,16 @@
   "title": "UK Gross Domestic Product (GDP)",
   "views": [
     {
-      "id": "Graph",
-      "state": {
-        "graphType": "columns",
+      "name": "graph",
+      "title": "UK Gross Domestic Product",
+      "specType": "simple",
+      "spec": {
+        "type": "column",
         "group": "Year",
         "series": [
           "GDP_Change"
         ]
-      },
-      "type": "Graph"
+      }
     }
   ]
 }
