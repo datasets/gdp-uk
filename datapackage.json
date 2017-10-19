@@ -12,9 +12,8 @@
       "schema": {
         "fields": [
           {
-            "format": "any",
             "name": "Year",
-            "type": "date"
+            "type": "year"
           },
           {
             "description": "Gross Value Added at basic prices: chained volume measures: Seasonally adjusted. Millions of GBP in base period money. Base period=2009. ABMI variable in ONS source.",
