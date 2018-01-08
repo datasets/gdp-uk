@@ -22,8 +22,8 @@ processing:
     input: gdp-uk
     output: gdp-uk
     tabulator:
-      skip_rows: [2,3,4,5,6,7,8]
-      headers: 1
+      headers: ['date', 'GDP']
+      skip_rows: [1,2,3,4,5,6,7,8]
 
 # how often to run the automation?
 schedule: every 12w
