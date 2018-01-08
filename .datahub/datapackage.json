@@ -11,6 +11,23 @@
   ],
   "resources": [
     {
+      "name": "gdp-uk-source",
+      "path": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "string"
+          },
+          {
+            "description": "Gross Domestic Product: chained volume measures: Seasonally adjusted £m",
+            "name": "GDP",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
       "name": "gdp-uk",
       "path": "data/data.csv",
       "schema": {
@@ -26,7 +43,8 @@
           }
         ]
       }
-    }
+    },
+
   ],
   "licenses": [
     {

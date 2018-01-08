@@ -10,14 +10,16 @@ inputs:
     kind: datapackage
     # the datapackage.json url. Soon this file will be grabbed automatically
     url: https://raw.githubusercontent.com/datasets/gdp-uk/master/.datahub/datapackage.json
+
     parameters:
       resource-mapping:
         # the link to original data-source file
         data-source: https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna
 
+
 processing:
-  - # for example let's delete some columns:
-    input: gdp-uk
+  -
+    input: gdp-uk-source
     output: gdp-uk
     tabulator:
       skip_rows: [2,3,4,5,6,7,8]
