@@ -14,12 +14,12 @@ inputs:
     parameters:
       resource-mapping:
         # the link to original data-source file
-        data-source: https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna
+        gdp-uk: https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna
 
 
 processing:
   -
-    input: gdp-uk-source
+    input: gdp-uk
     output: gdp-uk
     tabulator:
       skip_rows: [2,3,4,5,6,7,8]
