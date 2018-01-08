@@ -22,7 +22,6 @@
           },
           {
             "description": "Gross Domestic Product: Year on Year growth: CVM SA. IHYP variable in ONS source.",
-            "format": "percentage",
             "name": "GDP_Change",
             "type": "number"
           },
