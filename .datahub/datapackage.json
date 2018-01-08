@@ -21,7 +21,7 @@
           },
           {
             "description": "Gross Domestic Product: chained volume measures: Seasonally adjusted £m",
-            "name": "GDP",
+            "name": "Gross Domestic Product: chained volume measures: Seasonally adjusted £m",
             "type": "number"
           }
         ]
