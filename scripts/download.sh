@@ -1,3 +1,2 @@
 #!/bin/bash
-mkdir -p cache
-curl "http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp" > cache/ons-gdp.original.csv
+curl "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna" > source/data.csv

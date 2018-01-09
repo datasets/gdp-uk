@@ -1,20 +1,23 @@
-UK Real GDP since 1948 from the Office of National Statistics including
-percentage change and index versions.
+UK Real GDP since 1948 from the Office of National Statistics.
 
 ## Data
 
-Annual data in <annual.csv> The GDP measure is a chained volume measure and is
-therefore real not nominal. Amounts are in 2009 £m.
+Annual and quarterly data in <data/data.csv> The GDP measure is a chained volume measure and is
+seasonally adjusted.
 
-Extracted from http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp
+Extracted from https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/qna
 
 ## Preparation 
 
 Process is recorded and automated in 2 bash scripts:
-```
+```bash
 scripts/download.sh
 scripts/extract.sh
 ```
+
+## Automation
+
+This dataset is automatically updates quarterly on the datahub.io site: http://datahub.io/core/gdp-uk
 
 ## License
 

@@ -1,8 +1,6 @@
 #!/bin/bash
 
 # assumes download.sh has already been run
-# 1948 to 2012 = 65 rows inclusive
-# Fields we want are 1,2 (ABMI=GDP),7 (IHYP=% change in GDP)
-# Lastly remove quotes on year field ("1948" -> 1948)
-echo "Year,GDP,GDP_Change,GDP_Index" > annual.csv
-cat cache/ons-gdp.original.csv | tail -n +2 | head -n 65 | cut -d, -f1,2,7,49 | sed 's/"//g' >> annual.csv
+# remove quotes ("1948" -> 1948) and change quarters to dates
+echo "date, GDP" > data/data.csv
+cat source/data.csv | tail -n +9 | sed 's/"//g' | sed 's/ Q1/-03-31/g' | sed 's/ Q2/-06-30/g' | sed 's/ Q3/-09-30/g' | sed 's/ Q4/-12-31/g' >> data/data.csv
