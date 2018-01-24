@@ -1,29 +1,44 @@
 meta:
   dataset: gdp-uk
   findability: public
-  # username and userid could be found in ~/.config/datahub/config.json
   owner: core
   ownerid: core
 
 inputs:
   -
     kind: datapackage
-    # the datapackage.json url. Soon this file will be grabbed automatically
-    url: https://raw.githubusercontent.com/datasets/gdp-uk/master/.datahub/datapackage.json
 
     parameters:
       resource-mapping:
-        # the link to original data-source file
         gdp-uk: https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna
-
 
 processing:
   -
     input: gdp-uk
-    output: gdp-uk
     tabulator:
       headers: ['date', 'GDP']
       skip_rows: [1,2,3,4,5,6,7,8]
+    dpp:
+      -
+        run: find_replace
+        parameters:
+          resources: gdp-uk
+          fields:
+            -
+              name: date
+              patterns:
+                -
+                  find: ([0-9]{4})( Q1)
+                  replace: \1-03-31
+                -
+                  find: ([0-9]{4})( Q2)
+                  replace: \1-06-31
+                -
+                  find: ([0-9]{4})( Q3)
+                  replace: \1-09-30
+                -
+                  find: ([0-9]{4})( Q4)
+                  replace: \1-12-31
+    output: gdp-uk
 
-# how often to run the automation?
 schedule: every 12w
