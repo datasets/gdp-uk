@@ -20,7 +20,7 @@
       },
       "sources": [
         {
-          "web": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna",
+          "path": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna",
           "title": "Office for National Statistics (UK) - GDP Time Series"
         }
       ]
@@ -30,14 +30,15 @@
     {
       "homepage": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/qna",
       "name": "Gross Domestic Product: chained volume measures: Seasonally adjusted £m",
-      "web": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna",
+      "path": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna",
       "title": "Office for National Statistics (UK) - GDP Time Series"
     }
   ],
   "licenses": [
     {
-      "id": "odc-pddl",
-      "url": "http://opendatacommons.org/licenses/pddl/"
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
     }
   ]
 }

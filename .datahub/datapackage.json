@@ -5,7 +5,7 @@
     {
       "homepage": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/qna",
       "name": "Gross Domestic Product: chained volume measures: Seasonally adjusted £m",
-      "web": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna",
+      "path": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna",
       "title": "Office for National Statistics (UK) - GDP Time Series"
     }
   ],
@@ -31,8 +31,9 @@
   "readme": "UK Real GDP since 1948 from the Office of National Statistics.\n\n## Data\n\nAnnual and quarterly data in <data/data.csv> The GDP measure is a chained volume measure and is\nseasonally adjusted.\n\nExtracted from https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/qna\n\n## Preparation \n\nProcess is recorded and automated in 2 bash scripts:\n```bash\nscripts/download.sh\nscripts/extract.sh\n```\n\n## Automation\n\nThis dataset is automatically updates quarterly on the datahub.io site: http://datahub.io/core/gdp-uk\n\n## License\n\nSuch small amounts of data that believe there are no underlying rights and\nhence have provided under the Public Domain Dedication License.",
   "licenses": [
     {
-      "id": "odc-pddl",
-      "url": "http://opendatacommons.org/licenses/pddl/"
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
     }
   ]
 }
