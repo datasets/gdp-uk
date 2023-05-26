@@ -2,10 +2,10 @@ UK Real GDP since 1948 from the Office of National Statistics.
 
 ## Data
 
-Annual and quarterly data in <data/data.csv> The GDP measure is a chained volume measure and is
+Annual and quarterly data in "data/data.csv" The GDP measure is a chained volume measure and is
 seasonally adjusted.
 
-Extracted from https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/qna
+Extracted from [https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/qna](https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/qna)
 
 ## Preparation 
 
@@ -17,7 +17,7 @@ scripts/extract.sh
 
 ## Automation
 
-This dataset is automatically updates quarterly on the datahub.io site: http://datahub.io/core/gdp-uk
+This dataset is automatically updates quarterly on the datahub.io site: [http://datahub.io/core/gdp-uk](http://datahub.io/core/gdp-uk)
 
 ## License
 
