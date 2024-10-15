@@ -29,7 +29,7 @@
   "sources": [
     {
       "homepage": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/qna",
-      "name": "Gross Domestic Product: chained volume measures: Seasonally adjusted £m",
+      "name": "Gross Domestic Product: chained volume measures: Seasonally adjusted \u00a3m",
       "path": "https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/abmi/qna",
       "title": "Office for National Statistics (UK) - GDP Time Series"
     }
@@ -40,5 +40,6 @@
       "path": "http://opendatacommons.org/licenses/pddl/",
       "title": "Open Data Commons Public Domain Dedication and License v1.0"
     }
-  ]
+  ],
+  "collection": "economic-data"
 }
