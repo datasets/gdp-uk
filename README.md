@@ -19,7 +19,7 @@ scripts/extract.sh
 
 ## Automation
 
-This dataset is automatically updates quarterly on the datahub.io site: [http://datahub.io/core/gdp-uk](http://datahub.io/core/gdp-uk)
+This dataset is automatically updates monthly on the datahub.io site: [http://datahub.io/core/gdp-uk](http://datahub.io/core/gdp-uk)
 
 ## License
 
