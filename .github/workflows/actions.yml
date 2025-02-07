@@ -27,15 +27,12 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v3
-
-    - name: Set up Python 3.12
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.12'
-
-    - name: Run scripts
-      run: |
-        scripts/process.sh
+    
+    - name: Set execute permissions
+      run: chmod +x scripts/process.sh
+    
+    - name: Run script
+      run: ./scripts/process.sh
 
     - name: Configure Git
       run: |
