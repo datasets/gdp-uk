@@ -4,7 +4,7 @@
   "profile": "data-package",
   "resources": [
     {
-      "name": "gdp-uk",
+      "name": "annual",
       "path": "data/data.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -54,7 +54,10 @@
     {
       "name": "graph",
       "title": "UK Gross Domestic Product (GDP)",
-      "resourceName": "gdp-uk",
+      "resourceName": "annual",
+      "resources": [
+        "annual"
+      ],
       "specType": "simple",
       "spec": {
         "type": "line",
