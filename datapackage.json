@@ -1,21 +1,30 @@
 {
   "name": "gdp-uk",
   "title": "UK Gross Domestic Product (GDP)",
+  "profile": "data-package",
   "resources": [
     {
       "name": "gdp-uk",
       "path": "data/data.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
       "schema": {
         "fields": [
           {
             "name": "date",
-            "type": "string"
+            "type": "date",
+            "format": "%Y-%m-%d"
           },
           {
             "description": "Gross Value Added at basic prices: chained volume measures: Seasonally adjusted. Millions of GBP. ABMI variable in ONS source.",
             "name": "GDP",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
       },
       "sources": [
@@ -39,6 +48,21 @@
       "name": "ODC-PDDL-1.0",
       "path": "http://opendatacommons.org/licenses/pddl/",
       "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "views": [
+    {
+      "name": "graph",
+      "title": "UK Gross Domestic Product (GDP)",
+      "resourceName": "gdp-uk",
+      "specType": "simple",
+      "spec": {
+        "type": "line",
+        "group": "date",
+        "series": [
+          "GDP"
+        ]
+      }
     }
   ],
   "collection": "economic-data"
