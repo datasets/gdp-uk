@@ -55,9 +55,6 @@
       "name": "graph",
       "title": "UK Gross Domestic Product (GDP)",
       "resourceName": "annual",
-      "resources": [
-        "annual"
-      ],
       "specType": "simple",
       "spec": {
         "type": "line",
